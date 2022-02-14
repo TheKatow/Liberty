@@ -1,0 +1,43 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Barre de navigation normale */
+header {
+    min-height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header>*{
+    padding: 0 20px;
+}
+header>h1 {
+    color: white;
+}
+
+header>nav>a, header>nav>a:hover, header>nav>a:visited {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+header>nav>a:hover {
+    text-decoration: underline;
+}
+
+/* Media Querie pour gérer les petits écran */
+/* ici on est en desktop first car max width */
+@media screen and (max-width:835px) {
+    header>nav {
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        flex-direction: column;
+    }
+    
+}

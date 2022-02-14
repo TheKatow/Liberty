@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    padding:8px 16px; 
+    overflow: hidden;
+    float:left; 
+    width:100%; 
+    border:none; 
+    display:grid; 
+    outline:0;
+}
